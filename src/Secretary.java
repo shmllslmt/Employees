@@ -12,4 +12,9 @@ public class Secretary extends Employee {
     public void setDepartment(String department) {
         this.department = department;
     }
+
+    @Override
+    public double calcSalary() {
+        return super.getSalary() + 100;
+    }
 }

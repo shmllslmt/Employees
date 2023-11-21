@@ -2,6 +2,9 @@ public class Employee {
     private int id;
     private String name;
     private double salary;
+    Employee() {
+        this("Alex", 1, 5000);
+    }
     public Employee(String name, int id, double salary) {
         this.name = name;
         this.id = id;
@@ -30,5 +33,9 @@ public class Employee {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public double calcSalary() {
+        return salary;
     }
 }

@@ -13,9 +13,8 @@ public class Lawyer extends Employee {
     public void setSpecialisation(String specialisation) {
         this.specialisation = specialisation;
     }
-    @Override
-    public void setSalary(double increment) {
-        double newSalary = super.getSalary() + increment;
-        super.setSalary(newSalary);
+
+    public double calcSalary() {
+        return super.getSalary() + 500;
     }
 }
